@@ -1,13 +1,10 @@
 
 
 def reverse_each_word(word)
-    a = word.scan(/\w+/)
+    a = word.split(" ")
 
-    b = a.map {|string| string.split("").reverse}
+    b = a.map {|string| string.reverse}
 
-    c = b.map {|element| element.join}
-
-    return c.join(" ")
-
+    return b.join(" ")
 end
   
